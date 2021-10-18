@@ -1,0 +1,15 @@
+
+
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/alfredxiao?currentSchema=public
+    username: postgres
+    password: 123456
+  cache:
+    cache-names: MY_ENTITY
+    caffeine:
+      spec: expireAfterWrite=90s
+#      spec: expireAfterAccess=5s
+
